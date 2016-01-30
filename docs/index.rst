@@ -351,6 +351,8 @@ The ``send()`` and ``emit()`` functions accept an optional ``room`` argument
 that cause the message to be sent to all the clients that are in the given
 room.
 
+### Sending Messages to Specific Clients
+
 All clients are assigned a room when they connect, named with the session ID
 of the connection, which can be obtained from ``request.sid``. A given client
 can join any rooms, which can be given any names. When a client disconnects it
